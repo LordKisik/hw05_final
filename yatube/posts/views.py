@@ -52,13 +52,13 @@ def profile(request, username):
 def post_detail(request, post_id):
     post = get_object_or_404(Post, id=post_id)
     title = post.text[:30]
-    cot = post.author.posts.count()
+    post_counter = post.author.posts.count()
     form = CommentForm()
     comments = Comment.objects.filter(post_id=post_id)
     template = 'posts/post_detail.html'
     context = {
         'post': post,
-        'cot': cot,
+        'post_counter': post_counter,
         'title': title,
         'form': form,
         'comments': comments
@@ -127,9 +127,8 @@ def follow_index(request):
 def profile_follow(request, username):
     user = request.user
     author = User.objects.get(username=username)
-    follow = Follow.objects.filter(user=user, author=author)
-    if user != author and not follow.exists():
-        Follow.objects.create(user=user, author=author)
+    if user != author:
+        Follow.objects.get_or_create(user=user, author=author)
     return redirect('posts:profile', username=username)
 
 
