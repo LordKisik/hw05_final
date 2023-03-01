@@ -1,3 +1,49 @@
-# hw05_final
+<h1 align="center">YaTube - сеть блогеров</h1>
 
-[![CI](https://github.com/yandex-praktikum/hw05_final/actions/workflows/python-app.yml/badge.svg?branch=master)](https://github.com/yandex-praktikum/hw05_final/actions/workflows/python-app.yml)
+## Описание проекта
+Функционал: <br/>
+Регистрация пользователей<br/>
+Публикация постов c возможностью добавления изображения<br/>
+Подписка на избранных авторов<br/>
+Позможность комментировать посты посты других авторов<br/>
+## Используемые технологии:<br/>
+- Django - 2.2.16
+- Python 3.7
+- HTML/CSS
+## Как запустить проект:
+1. Клонировать репозиторий и перейти в него в командной строке:
+```
+git clone https://github.com/LordKisik/hw05_final.git
+```
+2. Cоздать и активировать виртуальное окружение:
+```
+python -m venv venv
+
+source venv/scripts/activate
+```
+3. Установка зависимостей используемых в проекте:
+```
+pip install -r requirements.txt
+```
+4. Переход в директорию yatube:
+```
+cd yatube/
+```
+5. Выполнить команды:
+```
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+```
+6. Перейдите по ссылке:
+```
+http://127.0.0.1:8000
+```
+
+**Ссылка на сайт:**<br/>
+```
+http://mrkisik.pythonanywhere.com/
+```
+
+**Автор проекта:**<br/>
+**Виталий Никонов** - https://github.com/LordKisik<br/>
