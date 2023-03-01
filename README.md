@@ -19,6 +19,7 @@ git clone https://github.com/LordKisik/hw05_final.git
 ```
 python -m venv venv
 ```
+```
 source venv/scripts/activate
 ```
 3. Установить зависимости используемые в проекте:
@@ -33,14 +34,14 @@ cd yatube/
 ```
 python manage.py makemigrations
 ```
+```
 python manage.py migrate
+```
 ```
 python manage.py runserver
 ```
-6. Перейти по ссылке:
-```
-http://127.0.0.1:8000
-```
+6. Перейти по ссылке: http://127.0.0.1:8000
+
 
 **Ссылка на сайт:**<br/>
 
