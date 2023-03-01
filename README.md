@@ -21,11 +21,11 @@ python -m venv venv
 
 source venv/scripts/activate
 ```
-3. Установка зависимостей используемых в проекте:
+3. Установить зависимости используемые в проекте:
 ```
 pip install -r requirements.txt
 ```
-4. Переход в директорию yatube:
+4. Перейти в директорию yatube:
 ```
 cd yatube/
 ```
@@ -35,7 +35,7 @@ python manage.py makemigrations
 python manage.py migrate
 python manage.py runserver
 ```
-6. Перейдите по ссылке:
+6. Перейти по ссылке:
 ```
 http://127.0.0.1:8000
 ```
