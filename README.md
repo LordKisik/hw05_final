@@ -41,9 +41,9 @@ http://127.0.0.1:8000
 ```
 
 **Ссылка на сайт:**<br/>
-```
+
 http://mrkisik.pythonanywhere.com/
-```
+
 
 **Автор проекта:**<br/>
 **Виталий Никонов** - https://github.com/LordKisik<br/>
